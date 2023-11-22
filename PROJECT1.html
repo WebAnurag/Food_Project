@@ -1,0 +1,254 @@
+<html>
+    <head>
+        <title>Bootstrap Project</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $("#mymodal").modal('show');
+    });
+    </script>
+<style>
+    *
+    {
+        padding: 0;
+        margin: 0;
+    }
+.top-header
+{
+    height: 120px;
+    background-image: linear-gradient(to  right,#f7f7f7,#c4c2c2);
+}
+.left
+{
+    float: left;
+    margin-top: 3px;
+}
+img
+{
+    height: 120px;
+}
+.nav
+{
+    float: right;
+    margin-top: 35px;
+}
+.active
+{
+    color: brown;
+}
+.carousel-inner img
+{
+    height: 500px;
+}
+.card
+{
+    float: left;
+    margin: 10px;
+}
+.modal-header
+{
+background-color:skyblue;
+}
+</style>
+    </head>
+    <body>
+        <div id="mymodal" class="modal fade">
+            <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title">KANPUR<font color="brown">FOODS</font></h5>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+            <form>
+                <div class="form-group">
+                    First Name <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    Last Name <input type="text" class="form-control">
+                 </div>
+                 <div class="form-group">
+                    Mobile No. <input type="tel" class="form-control">
+                </div>
+                <div class="form-group">
+                    Email <input type="email" class="form-control">
+                </div>
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="mymodal">Cancel</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+            </div>
+            </div>
+        <div class="top-header">
+            <div class="container">
+                <div class="left">
+                    <img src="logo.png" alt="logo">
+                </div>
+                <div class="nav">
+                    <a href="#" class="nav-item nav-link active"><b>Home</b></a>
+                    <a href="#" class="nav-item nav-link"><b>About</b></a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><b>Services</b></a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item"><b>Veg</b></a>
+                            <a href="#" class="dropdown-item"><b>Non-Veg</b></a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-item nav-link"><b>Contact-Us</b></a>
+                </div>
+            </div>
+        </div>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="food1.png" alt="First Slide" width="100%" height=500px>
+                </div>
+                <div class="carousel-item">
+                    <img src="food2.png" alt="Second Slide" width="100%" height=500px>
+                </div>
+                <div class="carousel-item">
+                    <img src="food3.png" alt="Third Slide" width="100%" height=500px>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+        <div class="card" style="width: 250px;">
+                <img src="pizza.jpg" alt="">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pizza</h5>
+                    <p class="card-text">
+                        Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                        <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                </div>
+            </div>
+            <div class="card" style="width: 250px;">
+                    <img src="burger.jpg" alt="">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Burger</h5>
+                        <p class="card-text">
+                            Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                            <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 250px;">
+                        <img src="samosa.jpg" alt="">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Samosa</h5>
+                            <p class="card-text">
+                                Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 250px;">
+                            <img src="manchurian.jpg" alt="">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Manchurian</h5>
+                                <p class="card-text">
+                                    Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="card" style="width: 250px;">
+                                <img src="chillipaneer.jpg" alt="">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Chilli Paneer</h5>
+                                    <p class="card-text">
+                                        Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                        <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                </div>
+                            </div>
+                            <div class="card" style="width: 250px;">
+                                    <img src="dosa.jpg" alt="">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Dosa</h5>
+                                        <p class="card-text">
+                                            Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                            <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 250px;">
+                                        <img src="idli.jpg" alt="">
+                                        <div class="card-body text-center">
+                                            <h5 class="card-title">Idli</h5>
+                                            <p class="card-text">
+                                                Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 250px;">
+                                            <img src="noodles.jpg" alt="">
+                                            <div class="card-body text-center">
+                                                <h5 class="card-title">Noodles</h5>
+                                                <p class="card-text">
+                                                    Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="card" style="width: 250px;">
+                                                <img src="biryani.jpg" alt="">
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-title">Biryani</h5>
+                                                    <p class="card-text">
+                                                        Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                        <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                                </div>
+                                            </div>
+                                            <div class="card" style="width: 250px;">
+                                                    <img src="fishfry.jpg" alt="">
+                                                    <div class="card-body text-center">
+                                                        <h5 class="card-title">Fish Fry</h5>
+                                                        <p class="card-text">
+                                                            Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                            <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                                    </div>
+                                                </div>
+                                                <div class="card" style="width: 250px;">
+                                                        <img src="tandoori.jpg" alt="">
+                                                        <div class="card-body text-center">
+                                                            <h5 class="card-title">Tandoori Chicken</h5>
+                                                            <p class="card-text">
+                                                                Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                                <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card" style="width: 250px;">
+                                                            <img src="egg.jpg" alt="">
+                                                            <div class="card-body text-center">
+                                                                <h5 class="card-title">Egg Curry</h5>
+                                                                <p class="card-text">
+                                                                    Now the most tasty & fresh Chinese food,South-indian food & North-indian food is available in your city.So please give me a chance to welcome you once in your own resturant KANPUR FOODS</p>
+                                                                    <a href="#" class="btn btn-primary stretched-link">View Profile</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    </body>
+</html>
